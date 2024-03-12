@@ -1,0 +1,140 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+#taskInput {
+    width: 80%;
+    padding: 0.7%;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+
+#taskList {
+    list-style-type: none;
+    padding: 0;
+}
+
+.taskItem {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3.5%;
+    margin-top: 1%;
+}
+
+.taskItem button {
+    border-radius: 10%;
+    padding: 4%;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    transition: background-color 1s ease-in-out,
+                border-radius 1s ease;
+}
+
+.taskItem button:hover {
+    background-color: red;
+}
+
+.taskItem button:active :active {
+    transition: 1s;
+    transform: scale(0.9);
+}
+
+#btn {
+    border-radius: 10%;
+    margin-left: 1%;
+    padding: 1.2%;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    transition: background-color 1s ease-in-out,
+                border-radius 1s ease;
+}
+
+#btn:hover {
+    background-color: rgb(0, 235, 0);
+    border-radius: 15%;
+}
+
+#btn:active {
+    transition: 1s;
+    transform: scale(0.9);
+}
+
+h1 {
+    margin-top: 2.5%;
+    padding-top: 2%;
+    text-align: center;
+}
+
+.container-1 {
+    width: 85%;
+    height: 90vh;
+    margin: auto;
+    margin-top: 4%;
+    border: solid 5px;
+    background-color: rgb(249, 204, 56);
+}
+
+.container-2 {
+    width: 75vw;
+    height: 76vh;
+    margin: auto;
+    background-color: whitesmoke;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.mini {
+    margin: auto;
+    width: 80%;
+    padding-top: 2%;
+}
+
+.itens {
+    margin: auto;
+    margin-top: 1%;
+    width: 70%;
+}
+
+li {
+    margin-left: 5%;
+    width: 45%;
+    padding: 1%;
+    border-bottom: solid 3px;
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#clip {
+    width: 16%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 84vh;
+    margin: auto;
+}
+
+#caneta {
+    width: 18%;
+    transform: rotate(-41.5deg);
+    margin: auto;
+    position: absolute;
+    top: 35vh;
+    left: 80vw;
+    right: 0;
+}
+
+button {
+    cursor: pointer;
+}
