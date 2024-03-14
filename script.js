@@ -19,3 +19,9 @@ function removeTask(button) {
     var ul = li.parentNode;
     ul.removeChild(li);
 }
+
+const chk = document.getElementById('chk');
+chk.style.backgroundColor = "#fff";
+
+chk.addEventListener('change', () => {
+    document.body.style.backgroundColor = "#000"});
