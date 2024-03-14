@@ -8,11 +8,16 @@
 
 body {
     font-family: sans-serif;
-    overflowX: hidden;
+    overflow-x: hidden;
+    background-color: #fff;
+}
+
+body.dark {
+    background-color: rgb(0, 0, 0);
 }
 
 #taskInput {
-    width: 80%;
+    width: 75%;
     padding: 0.7%;
     margin: auto;
     margin-bottom: 10px;
@@ -117,12 +122,12 @@ ul {
 }
 
 #clip {
-    width: 16%;
+    width: 14.5%;
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
-    bottom: 84vh;
+    bottom: 81vh;
     margin: auto;
 }
 
@@ -138,4 +143,56 @@ ul {
 
 button {
     cursor: pointer;
+}
+
+#chk {
+    display: none;
+}
+
+.switch {
+    position: relative;
+    background-color: whitesmoke;
+    width: 120px;
+    height: 60px;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    transition: all .5s ease-in-out;
+    cursor: pointer;
+    border: solid 2px rgb(249, 204, 56);;
+}
+
+.slider {
+    position: absolute;
+    background-color: rgb(249, 204, 56);;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    transition: all .5s ease-in-out;
+}
+
+#chk:checked ~ .switch {
+    background-color: black;
+    background-position: center;
+}
+
+#chk:checked ~ .switch .slider {
+    transform: translateX(60px);
+}
+
+#toogle {
+    margin: auto;
+    position: absolute;
+    top: 15vh;
+    right: 0;
+    left: 75vw;
+    bottom: 0;
+}
+
+footer {
+    background-color: black;
+    color: #fff;
+    margin-top: 4%;
+    padding: 1%;
 }
