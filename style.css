@@ -9,11 +9,17 @@
 body {
     font-family: sans-serif;
     overflow-x: hidden;
-    background-color: #fff;
+    background-color: var(--white);
 }
 
-body.dark {
-    background-color: rgb(0, 0, 0);
+:root {
+    --white: #fff;
+    --black: #030303;
+}
+
+[data-theme = "dark"] {
+    --white: #030303;
+    --black: #fff;
 }
 
 #taskInput {
