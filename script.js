@@ -35,9 +35,9 @@ function defineCurrentTheme(theme){
     document.documentElement.setAttribute("data-theme", theme)
 
     if(theme == "light") {
-       const switchbg = document.getElementById("swt").style.backgroundColor = "#E7DFD8";
+       const switchbg = document.getElementById("swt").style.backgroundColor = "#fff";
     } else {
-        const switchbg = document.getElementById("swt").style.backgroundColor = "#574533";
+        const switchbg = document.getElementById("swt").style.backgroundColor = "#000";
     }
 }
 
